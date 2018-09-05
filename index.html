@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- metrialize CDN for CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <!-- Font-awsome CDN -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+<body>
+  
+
+<div class="container">
+ <div class="row">
+   <div class="col s12">
+     <div id="main" class="card">
+       <div class="card-content">
+         <span class="card-title">Task List</span>
+         <div class="row">
+           <form id="task-form">
+             <div class="col s12 input-field">
+               <input type="text" id="task" name="task">
+               <label for="task">New Task</label>
+             </div>
+             <input type="submit" value="Add task" class="btn">
+           </form>
+         </div>
+       </div>
+       <div class="card-action">
+         <h5 id="task-title">Tasks</h5>
+         <div class="col s12 input-field">
+          <input type="text" id="filter" name="filter">
+          <label for="filter">Add Filter</label>
+        </div>
+        <ul class="collection"></ul>
+        <a href="#" class="btn black clear-task">Clear Task</a>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+
+  <!-- Jquery CDN -->
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <!-- Mterialize CDN Js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
